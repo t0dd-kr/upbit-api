@@ -1,0 +1,30 @@
+{
+  "name": "upbit-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t0dd-kr/upbit-api.git"
+  },
+  "author": "t0dd-kr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t0dd-kr/upbit-api/issues"
+  },
+  "homepage": "https://github.com/t0dd-kr/upbit-api#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "querystring": "^0.2.1",
+    "uuid": "^8.3.2",
+    "uuidv4": "^6.2.7"
+  }
+}
