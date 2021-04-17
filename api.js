@@ -54,16 +54,16 @@ export async function getMarkets() {
   return await get('/market/all')
 }
 
-export async function getCandle(market, type, unit = '') {
+export async function getCandle(market, type, count = 1) {
   // when type == 'minute' unit cam be 1, 3, 5, 15, 10, 30, 60, 240
-  return await get(`/candles/${type}s/${unit}`, {
-    params: { market }
+  return await get(`/candles/${type}`, {
+    params: { market, count }
   })
 }
 
-export async function getTradeTicks(market) {
+export async function getTradeTicks(market, count = 1) {
   return await get(`/trades/ticks`, {
-    params: { market }
+    params: { market, count }
   })
 }
 
